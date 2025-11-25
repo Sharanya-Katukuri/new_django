@@ -89,13 +89,7 @@ def movie_reviews(request):
 
         return JsonResponse({"movies": result})
 
-
-
-
-        
-        
-
-    
+ 
 
     # elif (request.method)=='PUT':
     #     data=json.loads(request.body)
@@ -131,7 +125,6 @@ def movie_reviews(request):
             exiting_movie.rating=rating_star
             exiting_movie.save()
         return JsonResponse({"status":"success","message":"movie record updated successfully","data":data},status=200)
-
 
 
     
